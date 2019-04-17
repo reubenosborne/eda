@@ -1,0 +1,95 @@
+h1 {
+    font-size: 52px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    border-bottom: 6px solid #444;
+    color: #333;
+    font-weight: 500;
+    font-family: "Helvetica Neue", "Arimo", Helvetica, sans-serif;
+    text-shadow: 0px 5px 13px #aaa;
+    letter-spacing: 10px;
+}
+
+h2 {
+    font-family: "Helvetica Neue", "Arimo", Helvetica, sans-serif;
+    font-size: 50px;
+}
+
+a {
+    color: white;
+}
+
+body {
+    margin: 0;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 5vw 1fr 5vw;
+    grid-template-rows: 300px minmax(250px, auto) 200px;
+    ;
+    grid-template-areas: ". header ." ". main ." "footer footer footer"
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+.posts {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.post {
+    height: 500px;
+    background: no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+.post:nth-child(1) {
+    margin-bottom: 120px;
+}
+
+footer {
+    grid-area: footer;
+    background: #666;
+    color: black;
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+
+footer .quote {
+    margin: 20vw;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: .3;
+    flex-direction: column;
+    transition: opacity .5s;
+}
+
+.overlay:hover {
+    transition: opacity .5s;
+    opacity: .8;
+}
+
+.overlay h3 {
+    color: #fff;
+}

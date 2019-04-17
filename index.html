@@ -1,9 +1,37 @@
 <html>
   <head>
     <title>My blog</title>
+    <meta charset="UTF-8">
+    <link href="main.css" rel="stylesheet" type="text/css" />
   <body>
-    <h1>Kia ora Taiao! (Hello World!)</h1> 
-    <p> This is the beginning of my website home page.</p>
-    <p> It will eventually contain a list of links to all my blogs. </p>
+
+    <header class="flex">
+      <h1>Reuben's Blog</h1> 
+    </header>
+
+    <main class="posts">
+
+        <article class="post flex" style="background-image: url('images/bjorn.jpg')">
+          <a href="blog/sprint1-technical.html">
+            <div class="overlay flex">
+              <h2>Sprint One</h2>
+            </div>
+          </a>
+        </article>
+
+        <article class="post flex" style="background-image: url('images/wets.jpg')">
+          <a href="blog/sprint1-technical.html">
+            <div class="overlay flex">
+              <h2>Sprint Two</h2>
+            </div>
+          </a>
+        </article>
+
+    </main>
+
+    <footer class="flex">
+      <p class="quote">“Run from what’s comfortable. Forget safety. Live where you fear to live. Destroy your reputation. Be notorious. I have tried prudent planning long enough. From now on I’ll be mad.” – Rumi</p>
+    </footer>
+
   </body>
 </html>
