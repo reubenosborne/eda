@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Positioning</title>
+    <meta charset="UTF-8">
+    <link href="../css/main.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <header class="flex">
+        <h1>Everything is a block</h1>
+    </header>
+
+    <main class="flex">
+        <div>
+            <h2>A guide to CSS positioning</h2>
+
+            <p>
+                Everything on the world wide web is a block. A rectangle of pixels.
+                <br><br>
+                By default these blocks have a 'Static' position. If you put something on a web page you don't actually
+                need to set the position yourself, by default, it will be static. But this can be changed.
+                <br><br>
+                (Let's have some fun.)
+            </p>
+        </div>
+
+        <img src="../images/facebook_logo.png" alt="Facebook logo">
+
+        <div>
+            <p>
+                Most people should be familiar with this page, and this logo.
+                <br><br>
+                Unless a Facebook developer has decided otherwise, the logo is a static element.
+                <br><br>
+                Let's add a 'Position' property and change the value to 'Relative'.
+                <br><br>
+            </p>
+        </div>
+
+        <img src="../images/facebook_position_relative.png" alt="Facebook logo with position relative">
+        <img src="../images/position_relative_detail.png" alt="Position relative detail" class="small_img">
+        
+        <div>
+            <p>
+                Okay nothing happened. And that's because even though we've changed the position's value to 'Relative' we need to give it some further commands. How about we shift it 1000px to the right, 'relative' to where it was.
+            </p>
+        </div>
+
+        <img src="../images/facebook_logo_relative_shift.png" alt="Facebook logo relative shift">
+        <img src="../images/relative_shift_detail.png" alt="Relative shift detail" class="small_img">
+
+        <div>
+            <p>
+                Well would you look at that! That sure ain't meant to be there. It's a shame it's not this easy to hack a site, it could be a lot of fun.
+                <br><br>
+                So, we've set the position to relative and given it a further command to move 1000px relative to the location it's <em>meant to be in.</em>
+                <br><br>
+                There's another value we can set the Position property to called 'fixed'. Let's give it a go. (Black border for visibility.)
+            </p>
+        </div>
+
+        <img src="../images/facebook_logo_fixed.png" alt="Facebook logo fixed">
+
+        <div>
+            <p>
+                Hmmm, doesn't look like anything has changed.. unless..
+            </p>
+        </div>
+
+        <img src="../images/facebook_logo_fixed_shift.png" alt="facebook_logo_fixed_shift">
+
+        <div>
+            <p>
+                Yes take that Facebook!
+                <br><br>
+                When you scroll down the logo stays in exactly the same position, 'fixed' in the spot we put it.
+                <br><br>
+                There's another positioning value that we can call on called 'Absolute'. It has similarities to Fixed but instead positions the element <em>anywhere</em> on the page we want. That's right, <strong>anywhere</strong>.
+            </p>
+        </div>
+
+        <img src="../images/facebook_logo_absolute_shift.png" alt="facebook_logo_absolute_shift">
+
+        <div>
+            <p>
+                Aha! Right over the login form.
+                <br><br>
+                The 'absolute' positioning is dependant on any parent element that has 'Absolute' or 'Relative' positioning. What does this mean? It means that if the logo was inside another div that had a 'Relative' or 'Absolute' positioning it would be positioned relatively to that element. Because it doesn't, it gets positioned relative to the html document.
+                <br><br>
+                Have a play with positioning, get hacky on your favourite (or least favourite) website, and hit me up on slack if you think this has helped you understand positioning more <em>or</em> if I've made a mistake and am spreading misinformation left right and center.
+                <br><br>
+                Thanks for reading x
+            </p>
+        </div>
+
+
+
+    </main>
+
+    <footer class="flex">
+        <a href="../index.html" class="button flex">Back</a>
+    </footer>
+
+</body>
+
+</html>
