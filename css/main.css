@@ -58,6 +58,11 @@ a {
     text-decoration: none;
 }
 
+p a{
+    color: tomato;
+    text-decoration: underline;
+}
+
 body {
     min-height: 100%;
     margin: 0;
